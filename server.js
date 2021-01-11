@@ -1,6 +1,14 @@
 // Entry point for our back-end
-
 const express = require("express");
+const connectDB = require('./config/db');
+
+// Connect DataBase
+connectDB();
+
+
+
+
+
 // init express into variable called APP
 const app = express();
 // add a route
