@@ -1,3 +1,5 @@
+
+
 {
-    "mongoURI": "mongodb+srv://huckSV:Um0zRBfP4S1zv1mm@contact-manager.j3ndi.mongodb.net/Contact-Manager?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://svcodes7:ZYL6a3RT5KwBG2fo@contactboss.m6e8h.mongodb.net/Contactboss?retryWrites=true&w=majority"
 }

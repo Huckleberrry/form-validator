@@ -1,0 +1,26 @@
+Dependency
+
+
+(Node Package Manager )
+npm i
+
+
+express - Web Framework ( handles routing )
+bcryptjs - Hasing passwords (storing passwords ) 
+jsonwebtoken - Authentication (JWT - json web token ) protected routes for backend
+config - global variables
+express-validator
+mongoose - deals with database (create modules )
+
+Dev Dependancy
+
+npm i -D ( -Dev dep )
+nodemon ( watches server )
+concurrently (runs backend/frontend simultaneously)
+
+
+CRUD 
+Create
+Read
+Update
+Delete
