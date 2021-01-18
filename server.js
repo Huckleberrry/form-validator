@@ -2,16 +2,22 @@
 const express = require("express");
 const connectDB = require('./config/db');
 
+
+
+const app = express();
+
 // Connect DataBase
 connectDB();
 
-// Init Middleware
-app.use(express.json({extended: false}));
+
 
 
 
 // init express into variable called APP
-const app = express();
+
+
+// Init Middleware
+app.use(express.json({extended: false}));
 // add a route
 // send data ( use postman to make get,post,& request - good for testing)
 // you can also add an http link in res.send as a string
