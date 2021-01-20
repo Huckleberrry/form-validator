@@ -24,3 +24,8 @@ Create
 Read
 Update
 Delete
+
+
+
+400 status = bad request
+500 status = server side error

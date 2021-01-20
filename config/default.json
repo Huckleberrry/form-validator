@@ -1,5 +1,4 @@
-
-
 {
-    "mongoURI": "mongodb+srv://svcodes7:ZYL6a3RT5KwBG2fo@contactboss.m6e8h.mongodb.net/Contactboss?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://svcodes7:ZYL6a3RT5KwBG2fo@contactboss.m6e8h.mongodb.net/Contactboss?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
 }
