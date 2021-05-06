@@ -1,61 +1,47 @@
-import React, { useReducer} from "react";
+import React, { useReducer } from "react";
 import AuthContext from "./authContext";
 import authReducer from "./authReducer";
 import {
-    REGISTER_SUCCESS,
-    REGISTER_FAIL,
-    USER_LOADED,
-    AUTH_ERROR,
-    LOGIN_SUCCESS,
-    LOGIN_FAIL,
-    LOGOUT,
-    CLEAR_ERRORS
+  ADD_CONTACT,
+  DELETE_CONTACT,
+  SET_CURRENT,
+  CLEAR_CURRENT,
+  UPDATE_CONTACT,
+  FILTER_CONTACTS,
+  CLEAR_FILTER,
 } from "../types";
 
 const AuthState = (props) => {
   const initialState = {
-      token: localStorage.getItem('token'),
-      isAuthenticated: null,
-      loading: true,
-      user: null,
-      error: null
+    token: localStorage.getItem('token'),
+    isAuthenticated: null,
+    loading: true,
+    user: null,
+    error: null
   };
-
 
 
   const [state, dispatch] = useReducer(authReducer, initialState);
 
 
-
-
-
-
-
-// load User
+// Load User
 
 // Register User
 
 // Login User
 
-// Logout 
+// Logout
 
 // Clear Errors
-
-
-
-
-
-
-
 
 return (
     <AuthContext.Provider
     value={{
         token: state.token,
-        isAuthenticated: state.token,
-        loading: state.token,
+        isAuthenticated: state.isAuthenticated,
+        loading: state.loading,
         user: state.user,
-        error: state.error,
+        error: state.error
     }}
     >
         {props.children}
