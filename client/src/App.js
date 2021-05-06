@@ -6,19 +6,26 @@ import About from './components/pages/About';
 
 import AlertState from './context/Alert/AlertState'
 import ContactState from './context/contact/ContactState';
+<<<<<<< HEAD
+=======
+import AlertState from './context/alert/AlertState';
+>>>>>>> 56a38191e74c1576585fd536057f30be4195d576
 import AuthState from './context/auth/AuthState';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import Alerts from './components/layout/Alerts';
 import './App.css';
 
 const  App = () => {
   return (
     <AuthState>
     <ContactState>
+      <AlertState>
     <Router>
       <Fragment>
         <Navbar />
         <div className="container">
+          <Alerts />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path="/about" component={About} />
@@ -28,6 +35,7 @@ const  App = () => {
         </div>
       </Fragment>
     </Router>
+    </AlertState>
     </ContactState>
     </AuthState>
   )
