@@ -3,6 +3,9 @@ import React, { useReducer } from "react";
 =======
 import React, { useReducer} from "react";
 import axios from 'axios';
+<<<<<<< HEAD
+>>>>>>> 56a38191e74c1576585fd536057f30be4195d576
+=======
 >>>>>>> 56a38191e74c1576585fd536057f30be4195d576
 import AuthContext from "./authContext";
 import authReducer from "./authReducer";
@@ -37,7 +40,12 @@ const AuthState = (props) => {
 
 
 
+<<<<<<< HEAD
 
+// load User
+const loadUser =() => console.log('loaduser');
+>>>>>>> 56a38191e74c1576585fd536057f30be4195d576
+=======
 // load User
 const loadUser =() => console.log('loaduser');
 >>>>>>> 56a38191e74c1576585fd536057f30be4195d576
@@ -65,6 +73,7 @@ const loadUser =() => console.log('loaduser');
   }
 // Login User
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // Logout
 
@@ -76,6 +85,13 @@ const logout =() => console.log('logout');
 // Clear Errors
 const clearErrors =() => console.log('clearErrors');
 
+=======
+const login =() => console.log('login');
+// Logout 
+const logout =() => console.log('logout');
+// Clear Errors
+const clearErrors =() => console.log('clearErrors');
+>>>>>>> 56a38191e74c1576585fd536057f30be4195d576
 
 
 
@@ -99,6 +115,9 @@ return (
         login,
         logout,
         clearErrors,
+<<<<<<< HEAD
+>>>>>>> 56a38191e74c1576585fd536057f30be4195d576
+=======
 >>>>>>> 56a38191e74c1576585fd536057f30be4195d576
     }}
     >
