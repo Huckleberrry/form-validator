@@ -3,17 +3,8 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from "./components/layout/Navbar"
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-
-import AlertState from './context/Alert/AlertState'
 import ContactState from './context/contact/ContactState';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import AlertState from './context/alert/AlertState';
->>>>>>> 56a38191e74c1576585fd536057f30be4195d576
-=======
-import AlertState from './context/alert/AlertState';
->>>>>>> 56a38191e74c1576585fd536057f30be4195d576
 import AuthState from './context/auth/AuthState';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
