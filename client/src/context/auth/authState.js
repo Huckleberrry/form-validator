@@ -57,12 +57,9 @@ const login = () => console.log('login');
 // Logout
 const logOut = () => console.log('logOut');
 // Clear Errors
-const clearErrors = () => {
-  console.log('clear errors');
-};
-
-
-
+const clearErrors = () => dispatch({
+  type: CLEAR_ERRORS
+});
 
 
 
@@ -88,3 +85,5 @@ return (
 };
 
 export default AuthState;
+
+
