@@ -11,6 +11,7 @@ import {
   LOGIN_FAIL,
   LOGOUT,
   CLEAR_ERRORS,
+  LOGIN_SUCCESS,
 } from "../types";
 
 const AuthState = (props) => {
@@ -68,7 +69,29 @@ const register = async FormData => {
 
 
 // Login User
-const login = () => console.log('login');
+const login = async FormData => {
+  const config = {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }
+
+  try {
+    const res = await axios.post('/api/auth', FormData,config);
+
+    dispatch ({
+      type: LOGIN_SUCCESS,
+      payload: res.data
+    });
+
+    loadUser();
+  } catch (error) {
+    dispatch({
+      type: LOGIN_FAIL,
+      payload: error.response.data.msg
+    });
+  }
+};
 
 // Logout
 const logOut = () => console.log('logOut');

@@ -22,6 +22,7 @@ const Register = (props) => {
 
     if(error === "User already exists") {
       setAlert(error, "danger");
+      clearErrors();
     }
     // eslint-disable-next-line
   }, [error, isAuthenticated, props.history]);
