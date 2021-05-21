@@ -11,7 +11,7 @@ const connectDB = async () => {
             useFindAndModify: false,
             useUnifiedTopology: true
         });
-        console.log("MongoDB Connected...you gucci player")
+        console.log("MongoDB Connected...you gucci player GANG GANG ?")
     } catch (error) {
         console.error(error.message);
         process.exit(1);
